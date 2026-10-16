@@ -29,7 +29,7 @@ const Navbar = () => {
         <header>
             <div className="logo">
                 <Link to="/">
-                    <h4>Persie Hoang</h4>
+                    <h4>Audiora</h4>
                 </Link>
             </div>
             <div className="search">

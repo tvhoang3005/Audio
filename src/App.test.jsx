@@ -9,7 +9,7 @@ describe('App', () => {
     it('renders the home page with tracks and the chart', () => {
         renderWithProviders(<App />);
 
-        expect(screen.getByRole('heading', { name: 'Persie Hoang' })).toBeInTheDocument();
+        expect(screen.getByRole('heading', { name: 'Audiora' })).toBeInTheDocument();
         expect(screen.getAllByText('Bánh Mì không').length).toBeGreaterThan(0);
         expect(screen.getByRole('button', { name: 'Top 10 Billboard' })).toHaveClass('active');
     });
