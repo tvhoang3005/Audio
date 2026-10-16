@@ -1,12 +1,12 @@
-$dark-blue-1: #0E151F;
+$dark-blue-1: #0e151f;
 
 $teal-1: #0ca678;
 
 $cyan-1: #00b2b3;
 
-$grey-1: #707B7C  ;
+$grey-1: #707b7c;
 
-$gb-1: #23B89A;
+$gb-1: #23b89a;
 
 $little-dark-white: #f2f2f2;
 
@@ -14,10 +14,11 @@ $grey-text: #888;
 
 $light-blue: #3eb4bf;
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
 
-@import url("https://fonts.googleapis.com/css?family=Montserrat:500&display=swap");
-
-li, a, button {
+li,
+a,
+button {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 14px;
@@ -59,7 +60,7 @@ img.player-icon {
     background: #fff;
     img.player-song-thumbnail {
         height: 90%;
-        width : 3.5%;
+        width: 3.5%;
         display: block;
         float: left;
     }
@@ -69,7 +70,7 @@ img.player-icon {
         float: left;
         font-size: 13px;
         width: 20%;
-        padding : 5px 20px;
+        padding: 5px 20px;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -121,9 +122,8 @@ img.player-icon {
             }
         }
 
-        
         i {
-            color: #34495E;
+            color: #34495e;
             font-size: 17px;
             position: absolute;
             top: 50%;
@@ -144,8 +144,34 @@ img.player-icon {
             font-size: 13px;
             margin: 0 2px;
         }
-        .input-range__label-container {
-            display: none;
+        .player-range {
+            flex: 1;
+            height: 0.3rem;
+            margin: 0 10px;
+            border-radius: 0.3rem;
+            appearance: none;
+            cursor: pointer;
+            background: linear-gradient(
+                to right,
+                #3f51b5 var(--progress, 0%),
+                #eeeeee var(--progress, 0%)
+            );
+
+            // Thumb stays hidden, matching the original progress-bar look.
+            &::-webkit-slider-thumb {
+                appearance: none;
+                width: 0;
+                height: 0;
+            }
+            &::-moz-range-thumb {
+                width: 0;
+                height: 0;
+                border: 0;
+            }
+            &:focus-visible {
+                outline: 2px solid #3f51b5;
+                outline-offset: 4px;
+            }
         }
     }
 
@@ -185,14 +211,10 @@ img.player-icon {
     }
 }
 
-.input-range__slider {
-    display: none !important;
-}
-
 .player-loader {
     svg {
         path {
-            fill: #34495E;
+            fill: #34495e;
         }
     }
 }

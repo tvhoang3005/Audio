@@ -17,7 +17,6 @@
     opacity: 0;
     max-height: 0;
 
-    
     &-panel {
         height: 45px;
         padding: 0 24px;
@@ -61,14 +60,11 @@
 
     &-clear {
         width: 20%;
-        
     }
 
     &-hide {
         width: 10%;
-
     }
-
 }
 .queue-list {
     max-height: 390px;
@@ -82,7 +78,7 @@
     }
 
     &::-webkit-scrollbar-thumb {
-        background:#525861;
+        background: #525861;
         border-radius: 5px;
     }
 
@@ -93,7 +89,7 @@
     .list-item {
         height: 58px;
         position: relative;
-        margin-bottom: 5px;  
+        margin-bottom: 5px;
         display: flex;
         padding: 5px 10px 5px 20px;
         margin-top: 10px;
@@ -140,19 +136,18 @@
             }
         }
     }
-    
+
     .queue-track-artist {
         font-size: 12px;
         margin-top: 5px;
         color: #3eb4bf;
         cursor: pointer;
-
     }
-    
+
     .queue-track-title {
-      a {
-        color: #888;
-      }
+        a {
+            color: #888;
+        }
     }
 }
 
@@ -180,4 +175,3 @@ a {
         transform: translateX(100%);
     }
 }
-

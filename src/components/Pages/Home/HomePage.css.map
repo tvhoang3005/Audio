@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,SAAS,CAAC;EACN,OAAO,EAAE,IAAI;EACb,QAAQ,EAAE,QAAQ;EAClB,eAAe,EAAE,YAAY;CAChC;;AAED,AAAA,cAAc,CAAC;EACX,KAAK,EAAE,GAAG;EACV,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,IAAI;CACnB;;AAED,AAAA,cAAc,CAAC;EACX,UAAU,EAAE,IAAI;EAChB,KAAK,EAAE,GAAG;EACV,KAAK,EAAE,KAAK;CACf",
-    "sources": [
-        "HomePage.scss"
-    ],
-    "names": [],
-    "file": "HomePage.css"
-}

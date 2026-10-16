@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
 
-li, a, button {
-    color : #edf0f1;
+li,
+a,
+button {
+    color: #edf0f1;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -10,22 +12,22 @@ li, a, button {
 }
 
 header {
-    background: #24252A;
+    background: #24252a;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding : 10px 5%;
-    
+    padding: 10px 5%;
+
     .logo {
         letter-spacing: 5px;
         font-size: 20px;
         cursor: pointer;
-        color : #e2e2e2;
+        color: #e2e2e2;
     }
 
     .search {
         position: relative;
-        display : flex;
+        display: flex;
         transition: all 0.3s ease 0s;
         width: 20%;
         i {
@@ -43,9 +45,9 @@ header {
             border-radius: 5px;
             outline: none;
             transition: all 0.3s ease 0s;
-            background: #24252A;
-            color : #595f6e;
-            border : none;
+            background: #24252a;
+            color: #595f6e;
+            border: none;
             border-bottom: 1px solid #5fa8d3;
         }
     }
@@ -57,8 +59,8 @@ header {
         display: flex;
         justify-content: flex-end;
         li {
-            display : flex;
-            padding : 0 20px;
+            display: flex;
+            padding: 0 20px;
             justify-content: center;
             align-items: center;
             a {
@@ -68,7 +70,7 @@ header {
                 text-transform: uppercase;
                 transition: all 0.3s ease 0s;
                 &:hover {
-                    color : #0088a9;
+                    color: #0088a9;
                 }
                 span {
                     margin: 0 4px;
@@ -90,16 +92,16 @@ header {
         cursor: pointer;
         display: none;
         div {
-            width : 25px;
+            width: 25px;
             height: 3px;
-            background : #e2e2e2;
-            margin : 5px;
+            background: #e2e2e2;
+            margin: 5px;
             transition: all 0.3s ease 0s;
         }
     }
 }
 
-@media screen and (max-width : 798px ) {
+@media screen and (max-width: 798px) {
     body {
         overflow: hidden;
     }
@@ -110,8 +112,8 @@ header {
         padding-right: 0;
         position: relative;
         .logo {
-            position : absolute;
-            top : -15px;
+            position: absolute;
+            top: -15px;
             left: 50%;
             transform: translateX(-50%);
         }
@@ -123,14 +125,14 @@ header {
             transform: translateX(-50%) translateY(-50%);
         }
         .nav-links {
-            width : 30%;
+            width: 30%;
             height: 50vh;
             display: flex;
             flex-direction: column;
-            position : absolute;
+            position: absolute;
             top: 13vh;
             right: 0;
-            background: #24252A;
+            background: #24252a;
             justify-content: space-around;
             align-items: center;
             transform: translateX(100%);
@@ -147,10 +149,9 @@ header {
         .burger {
             display: block;
             margin: 0 2vh;
-            
         }
         .burger-toggle {
-            transition : all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
             .line1 {
                 transform: rotate(-45deg) translate(-5px, 6px);
             }
@@ -173,5 +174,4 @@ header {
             transform: translateX(0px);
         }
     }
-
 }
