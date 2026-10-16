@@ -7,7 +7,7 @@
     bottom: 0;
     z-index: 100;
     background: rgba(80, 81, 102, 0.7);
-    
+
     &-hidden {
         position: absolute;
         width: 100%;
@@ -16,7 +16,7 @@
         left: 0;
         z-index: 1;
     }
-    
+
     &-container {
         min-width: 330px;
         position: absolute;
@@ -33,7 +33,7 @@
     &-close {
         width: 100%;
         position: relative;
-        
+
         i {
             font-size: 20px;
             letter-spacing: 0.5px;

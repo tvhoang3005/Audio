@@ -1,11 +1,9 @@
-
 .lazyload-img {
     width: 80px;
     height: 80px;
     position: relative;
     cursor: pointer;
     border-radius: 5px;
-
 
     &:hover {
         .lazyload-icon {
@@ -22,7 +20,7 @@
         object-fit: cover;
         position: absolute;
         top: 0;
-        left:0;
+        left: 0;
         z-index: 1;
         transition: all 0.4s ease 0s;
         border-radius: 5px;
@@ -61,7 +59,7 @@
             width: 3%;
             height: 40%;
             background: #f1f1f1;
-            margin:0 2px;
+            margin: 0 2px;
             border-radius: 5px;
             animation: loading 0.7s infinite;
             &:nth-child(2) {
@@ -85,7 +83,6 @@
             &:nth-child(8) {
                 animation-delay: 0.7s;
             }
-            
         }
     }
 }
@@ -96,11 +93,13 @@
 }
 
 @keyframes loading {
-    0%{
+    0% {
         height: 0;
-    }40%{
+    }
+    40% {
         height: 40%;
-    }100%{
+    }
+    100% {
         height: 0;
     }
 }

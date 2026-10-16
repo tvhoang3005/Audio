@@ -1,4 +1,3 @@
-
 export const changeAlias = (alias) => {
     const arrStr = alias.split('');
     function change(str) {
@@ -25,42 +24,4 @@ export const changeAlias = (alias) => {
     }
 
     return arrStr.join('').replace(/-+/g, '-');
-}
-
-export const getSongUrl = (name, id) => {
-    if (!/\s+/.test(name)) {
-        // if there is no space therefore the name argument is already escaped
-        return `/song/${name}/${id}`;
-    }
-    return `/song/${changeAlias(name)}/${id}`;
-}
-
-export const isObject = (ojb) => {
-    
-    return Object.prototype.toString.call(ojb) === '[object Object]';
- };  
-
-export const findIndex = (arr, entry, value) => {
-
-    for(let i in arr) {
-        if(arr[i][entry] === value)
-            return i;
-    };
-    return undefined;
-};
-
-export const removeById = (arr, id) => {
-
-    if(isObject(arr[0])) {
-        arr.splice(findIndex(arr, 'id', id), 1);
-        return arr;
-    }
-
-    arr.splice(arr.indexOf(id), 1);
-    return arr;
-};
-
-export const isEmpty = (obj) => {
-
-    return Object.keys(obj).length === 0;
 };

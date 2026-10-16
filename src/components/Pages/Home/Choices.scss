@@ -1,11 +1,11 @@
-*{
-    margin : 0;
-    padding : 0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     background: #f7f6ff;
 }
 
@@ -13,7 +13,6 @@ body {
     margin-top: 100px;
     padding: 32px;
 }
-
 
 .select-box {
     width: 400px;
@@ -59,7 +58,7 @@ body {
         }
 
         &::-webkit-scrollbar-thumb {
-            background:#525861;
+            background: #525861;
             border-radius: 0 8px 8px 0;
         }
 
